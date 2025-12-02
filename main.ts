@@ -10,7 +10,7 @@ basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
 // variables
-let sonarDistance = sonar.ping(DigitalPin.P0, DigitalPin.P0, PingUnit.Centimeters)
+let sonarDistance = sonar.ping(DigitalPin.P16, DigitalPin.P16, PingUnit.Centimeters)
 
 // loop
 while (true) {
