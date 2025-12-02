@@ -15,7 +15,6 @@ let sonarDistance = sonar.ping(DigitalPin.P0, DigitalPin.P0, PingUnit.Centimeter
 
 // loop
 while (true) {
-    
     if (sonarDistance <= 10) {
         radio.sendString ("Too Close")
     }
