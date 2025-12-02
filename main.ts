@@ -8,14 +8,15 @@
 // setup
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
+radio.setGroup(11)
 
 // variables
-let sonarDistance = sonar.ping(DigitalPin.P15, DigitalPin.P16, PingUnit.Centimeters)
+let sonarDistance = sonar.ping(DigitalPin.P0, DigitalPin.P0, PingUnit.Centimeters)
 
 // loop
 while (true) {
     
     if (sonarDistance <= 10) {
-        basic.showString("Too Close")
+        radio.sendString ("Too Close")
     }
 }
