@@ -1,7 +1,7 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
  * Created by: Michael Batiuk
- * Created on: sonarDistance 2025
+ * Created on: Dec 2025
  * This program simulates Radios
 */
 
