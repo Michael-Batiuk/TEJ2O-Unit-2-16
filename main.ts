@@ -13,10 +13,8 @@ radio.setGroup(11)
 // variables
 let sonarDistance = sonar.ping(DigitalPin.P0, DigitalPin.P0, PingUnit.Centimeters)
 
-// loop
-while (true) {
-    
+// if statment
+  
     if (sonarDistance <= 10) {
         radio.sendString ("Too Close")
     }
-}
