@@ -1,8 +1,21 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: XXX
- * Created on: Sep 2020
- * This program ...
+ * Created by: Michael Batiuk
+ * Created on: sonarDistance 2025
+ * This program simulates Radios
 */
 
-basic.showString('Hello, World!')
+// setup
+basic.clearScreen()
+basic.showIcon(IconNames.Happy)
+
+// variables
+let sonarDistance = sonar.ping(DigitalPin.P0, DigitalPin.P0, PingUnit.Centimeters)
+
+// loop
+while (true) {
+    
+    if (sonarDistance <= 10) {
+        basic.showString("Too Close")
+    }
+}
